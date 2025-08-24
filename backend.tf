@@ -1,9 +1,9 @@
 terraform {
   cloud {
-    organization = "your-organisation-name"  
+    organization = "Cloudf"  
 
     workspaces {
-      name = "your-workspace-name"
+      name = "terrafer-clouflare"
     }
   }
 }
