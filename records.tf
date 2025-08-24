@@ -7,7 +7,7 @@ resource "cloudflare_record" "any_record_a" {
 }
 
 resource "cloudflare_record" "any_record_aaaa" {
-  zone_id = cloudflare_zone.domain_zone.id
+  zone_id = cloudflare_zone.Otazio_zone.id
   name    = "your-record-name"
   value   = "some_ip_v6_address"
   type    = "AAAA"
