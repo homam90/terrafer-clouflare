@@ -3,7 +3,7 @@ terraform {
     organization = "cloud-d"  
 
     workspaces {
-      name = "terrafer-clouflare"
+      name = "terrafer-cl"
     }
   }
 }
