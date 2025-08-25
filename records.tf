@@ -5,3 +5,10 @@ resource "cloudflare_record" "homam" {
   type    = "A"
   proxied = false
 }
+resource "cloudflare_record" "test" {
+  zone_id = data.cloudflare_zone.otazio-contracting_zone.id
+  name    = "test"
+  value   = "5.10.12.10"
+  type    = "A"
+  proxied = false
+}
