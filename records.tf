@@ -8,7 +8,7 @@ resource "cloudflare_record" "homam" {
 resource "cloudflare_record" "test" {
   zone_id = data.cloudflare_zone.otazio-contracting_zone.id
   name    = "test"
-  value   = "5.7.5.5"
+  value   = "5.7.22.5"
   type    = "A"
   proxied = false
 
