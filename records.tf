@@ -1,15 +1,8 @@
-resource "cloudflare_record" "any_record_a" {
-  zone_id = cloudflare_zone.Otazio_zone.id
-  name    = "your-record-name"
-  value   = "your-ipv4-address"
+resource "cloudflare_record" "homam" {
+  zone_id = cloudflare_zone.otazio-contracting_zone.id
+  name    = "homam"
+  value   = "5.6.5.5"
   type    = "A"
   proxied = false
 }
 
-resource "cloudflare_record" "any_record_aaaa" {
-  zone_id = cloudflare_zone.Otazio_zone.id
-  name    = "your-record-name"
-  value   = "some_ip_v6_address"
-  type    = "AAAA"
-  proxied = false
-}
